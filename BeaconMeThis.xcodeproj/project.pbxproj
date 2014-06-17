@@ -160,19 +160,19 @@
 				3323F0B9EB98C82F7B19E6CF /* AppDelegate.m */,
 				3323F3814E846EDDAD73D98C /* Images.xcassets */,
 				3323F89C1E07F8288527883B /* Main.storyboard */,
-				3323FF7E419A877FDA1BAE85 /* Peripheral */,
+				3323FF7E419A877FDA1BAE85 /* Beacon */,
 				3323F4CE0E10726B9D0F00A6 /* Controller */,
 			);
 			path = BeaconMeThis;
 			sourceTree = "<group>";
 		};
-		3323FF7E419A877FDA1BAE85 /* Peripheral */ = {
+		3323FF7E419A877FDA1BAE85 /* Beacon */ = {
 			isa = PBXGroup;
 			children = (
 				3323FB3B1B74BDF37F136970 /* BeaconManager.m */,
 				3323F5C544EB3B45CCE1B03B /* BeaconManager.h */,
 			);
-			path = Peripheral;
+			path = Beacon;
 			sourceTree = "<group>";
 		};
 		3323FF99465EF8A050EBC2EB /* Supporting Files */ = {
