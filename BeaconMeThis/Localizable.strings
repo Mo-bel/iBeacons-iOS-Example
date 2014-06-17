@@ -1,0 +1,22 @@
+/****************************************************************************/
+/* Localization file */
+
+
+"Starting advertisement..." = "Starting advertisement...";
+"Stoping advertisement..." = "Stoping advertisement...";
+"Stopped advertisement..." = "Stopped advertisement...";
+"Start advertising" = "Start advertising";
+"Monitoring stopped..." = "Monitoring stopped...";
+"Peripheral manager state unknown..." = "Peripheral manager state unknown...";
+"Peripheral manager state resetting..." = "Peripheral manager state resetting...";
+"Your device does not support advertising as iBeacon..." = "Your device does not support advertising as iBeacon...";
+"Your device is not authorzied to advertise as iBeacon..." = "Your device is not authorzied to advertise as iBeacon...";
+"You should not dissable bluetooth if you want to advertise as iBeacon..." = "You should not dissable bluetooth if you want to advertise as iBeacon...";
+"Bluetooth is on..." = "Bluetooth is on...";
+"Peripheral could not advertise, see log..." = "Peripheral could not advertise, see log...";
+"Advertisement started, try detecting the beacon with another device!" = "Advertisement started, try detecting the beacon with another device!";
+"Stop advertising" = "Stop advertising";
+"Monitoring has started..." = "Monitoring has started...";
+"Stop monitoring" = "Stop monitoring";
+"Start monitoring" = "Start monitoring";
+"RSSI range is %d with an accuracy of ± %@ m" = "RSSI range is %d with an accuracy of ± %@ m";

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.17" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKT-qV-R2d">
+                                <rect key="frame" x="20" y="518" width="113" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="xMR-of-9AJ"/>
+                                </constraints>
+                                <state key="normal" title="Start advertising">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="_advertisingButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Abi-A3-aqq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eex-q8-xih">
+                                <rect key="frame" x="187" y="518" width="113" height="30"/>
+                                <state key="normal" title="Start monitoring">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="_monitorButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="baM-Il-TLk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="TcF-Qa-PCr">
+                                <rect key="frame" x="20" y="274" width="280" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="TcF-Qa-PCr" secondAttribute="trailing" constant="20" symbolic="YES" id="7aD-Xl-gln"/>
+                            <constraint firstItem="eex-q8-xih" firstAttribute="height" secondItem="pKT-qV-R2d" secondAttribute="height" id="AHz-iN-bbV"/>
+                            <constraint firstItem="eex-q8-xih" firstAttribute="baseline" secondItem="pKT-qV-R2d" secondAttribute="baseline" id="Ine-se-JsO"/>
+                            <constraint firstItem="TcF-Qa-PCr" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="JfM-7T-DjL"/>
+                            <constraint firstItem="eex-q8-xih" firstAttribute="width" secondItem="pKT-qV-R2d" secondAttribute="width" id="X0T-63-bZ7"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="pKT-qV-R2d" secondAttribute="bottom" constant="20" id="Yhj-wi-mPg"/>
+                            <constraint firstAttribute="centerY" secondItem="TcF-Qa-PCr" secondAttribute="centerY" id="cfh-Cf-G8m"/>
+                            <constraint firstAttribute="centerX" secondItem="TcF-Qa-PCr" secondAttribute="centerX" id="gvP-7w-7id"/>
+                            <constraint firstItem="eex-q8-xih" firstAttribute="height" secondItem="pKT-qV-R2d" secondAttribute="height" id="j9Z-R3-t7P"/>
+                            <constraint firstAttribute="trailing" secondItem="eex-q8-xih" secondAttribute="trailing" constant="20" symbolic="YES" id="pyh-lr-GCK"/>
+                            <constraint firstItem="pKT-qV-R2d" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="yn7-6e-Uzj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="_advertiseButton" destination="pKT-qV-R2d" id="3NC-Z1-pCU"/>
+                        <outlet property="_monitorButton" destination="eex-q8-xih" id="qrg-nV-B5a"/>
+                        <outlet property="_statusLabel" destination="TcF-Qa-PCr" id="lqt-j7-XWu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
